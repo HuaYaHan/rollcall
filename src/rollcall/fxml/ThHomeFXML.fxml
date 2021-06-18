@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rollcall.ThHomeFXMLController">
+  <content>
+    <AnchorPane prefHeight="500.0" prefWidth="700.0" styleClass="bodybackground" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="366.0" fitWidth="528.0" layoutX="78.0" layoutY="63.0" opacity="0.8" pickOnBounds="true">
+               <image>
+                  <Image url="@../pictures/gray.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="logout" layoutX="706.0" layoutY="20.0" mnemonicParsing="false" onAction="#logoutButtonAction" styleClass="btn-basic-gray" text="登出" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="14.0" />
+            <Label fx:id="name" layoutX="670.0" layoutY="20.0" text="Label" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="20.0" />
+            <Button fx:id="OpenCourse" layoutX="182.0" layoutY="230.0" mnemonicParsing="false" onAction="#OpenButtonAction" styleClass="btn-basic" text="教師開課">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="Search" layoutX="403.0" layoutY="230.0" mnemonicParsing="false" onAction="#SearchButtonAction" styleClass="btn-basic" text="快速查詢">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="opRecord" layoutX="293.0" layoutY="230.0" mnemonicParsing="false" onAction="#opRecordButtonAction" styleClass="btn-basic" text="開課紀錄">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import datetimepicker.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rollcall.ThOpCourseFXMLController">
+  <content>
+    <AnchorPane prefHeight="500.0" prefWidth="700.0" styleClass="bodybackground" stylesheets="@style.css">
+         <children>
+            <Button fx:id="logout" layoutX="706.0" layoutY="20.0" mnemonicParsing="false" onAction="#logoutButtonAction" styleClass="btn-basic-gray" text="登出" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="14.0" />
+            <Label fx:id="name" layoutX="670.0" layoutY="20.0" text="Label" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="20.0" />
+            <Button fx:id="Search" layoutX="343.0" layoutY="70.0" mnemonicParsing="false" onAction="#SearchButtonAction" styleClass="btn-basic-gray" text="快速查詢" />
+            <Button fx:id="opRecord" layoutX="269.0" layoutY="70.0" mnemonicParsing="false" onAction="#opRecordButtonAction" styleClass="btn-basic-gray" text="開課紀錄" />
+            <ImageView fitHeight="250.0" fitWidth="510.0" layoutX="85.0" layoutY="120.0" opacity="0.7" pickOnBounds="true">
+               <image>
+                  <Image url="@../pictures/gray.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="85.0" layoutY="120.0" prefHeight="250.0" prefWidth="510.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="510.0" style="-fx-background-color: gray;" text="教師開課" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="2.0" layoutY="38.0" text="課程" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="160.0" layoutY="38.0" text="教室" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <Label layoutX="320.0" layoutY="38.0" text="點名截止時間" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+                  <ComboBox fx:id="course" layoutX="2.0" layoutY="59.0" prefWidth="130.0" promptText="請選擇" />
+                  <ComboBox fx:id="classroom" layoutX="160.0" layoutY="59.0" prefWidth="130.0" promptText="請選擇" />
+                  <DateTimePicker fx:id="deadline" layoutX="319.0" layoutY="59.0" prefWidth="189.0" />
+                  <Button fx:id="start" layoutX="225.0" layoutY="200.0" mnemonicParsing="false" onAction="#startButtonAction" styleClass="btn-basic" text="開放點名" />
+               </children>
+            </Pane>
+            <Button fx:id="back" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonAction" styleClass="btn-basic-gray" text="首頁" />
+         </children>
+      </AnchorPane>
+  </content>
+</ScrollPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rollcall.CoHomeFXMLController">
+  <content>
+    <AnchorPane prefHeight="500.0" prefWidth="700.0" styleClass="bodybackground" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="366.0" fitWidth="528.0" layoutX="78.0" layoutY="63.0" opacity="0.8" pickOnBounds="true">
+               <image>
+                  <Image url="@../pictures/gray.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="logout" layoutX="706.0" layoutY="20.0" mnemonicParsing="false" onAction="#logoutButtonAction" styleClass="btn-basic-gray" text="登出" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="14.0" />
+            <Label fx:id="name" layoutX="670.0" layoutY="20.0" text="Label" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="20.0" />
+            <Label layoutX="231.0" layoutY="85.0" text="請選擇要匯入的使用者資料(CSV)" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Button fx:id="userCSV" layoutX="249.0" layoutY="105.0" mnemonicParsing="false" text="選擇檔案" />
+            <Label fx:id="userLabel" layoutX="316.0" layoutY="111.0" text="尚未選擇任何檔案" textFill="WHITE" />
+            <Button fx:id="userInput" layoutX="281.0" layoutY="137.0" mnemonicParsing="false" styleClass="btn-basic" text="匯入使用者資料" />
+            <Label layoutX="224.0" layoutY="207.0" text="請選擇要匯入的教師課程資料(CSV)" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Button fx:id="thCourseCSV" layoutX="249.0" layoutY="227.0" mnemonicParsing="false" text="選擇檔案" />
+            <Label fx:id="thCourseLabel" layoutX="316.0" layoutY="231.0" text="尚未選擇任何檔案" textFill="WHITE" />
+            <Button fx:id="thCourseInput" layoutX="277.0" layoutY="257.0" mnemonicParsing="false" styleClass="btn-basic" text="匯入教師課程資料" />
+            <Label layoutX="224.0" layoutY="327.0" text="請選擇要匯入的學生選課資料(CSV)" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Button fx:id="stCourseCSV" layoutX="249.0" layoutY="347.0" mnemonicParsing="false" text="選擇檔案" />
+            <Label fx:id="stCourseLabel" layoutX="316.0" layoutY="351.0" text="尚未選擇任何檔案" textFill="WHITE" />
+            <Button fx:id="stCourseInput" layoutX="277.0" layoutY="377.0" mnemonicParsing="false" styleClass="btn-basic" text="匯入學生選課資料" />
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

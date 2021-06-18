@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import datetimepicker.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rollcall.StRCRecordFXMLController">
+  <content>
+    <AnchorPane prefHeight="500.0" prefWidth="700.0" styleClass="bodybackground" stylesheets="@style.css">
+         <children>
+            <Button fx:id="logout" layoutX="706.0" layoutY="20.0" mnemonicParsing="false" onAction="#logoutButtonAction" styleClass="btn-basic-gray" text="登出" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="14.0" />
+            <Label fx:id="name" layoutX="670.0" layoutY="20.0" text="Label" AnchorPane.rightAnchor="84.0" AnchorPane.topAnchor="20.0" />
+            <Button fx:id="course" layoutX="305.0" layoutY="70.0" mnemonicParsing="false" onAction="#MyCourseButtonAction" styleClass="btn-basic-gray" text="線上點名" />
+            <Pane layoutX="100.0" layoutY="120.0" prefHeight="300.0" prefWidth="650.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="30.0">
+               <children>
+                  <TableView fx:id="recordTable" prefHeight="300.0" prefWidth="650.0">
+                    <columns>
+                      <TableColumn fx:id="courseCol" editable="false" prefWidth="135.0" sortable="false" text="課程" />
+                      <TableColumn fx:id="classroomCol" editable="false" prefWidth="60.0" sortable="false" text="教室" />
+                        <TableColumn fx:id="optimeCol" editable="false" prefWidth="146.0" sortable="false" text="開放點名時間" />
+                        <TableColumn fx:id="closetimeCol" editable="false" prefWidth="146.0" sortable="false" text="點名截止時間" />
+                        <TableColumn fx:id="statusCol" editable="false" prefWidth="55.0" sortable="false" text="狀態" />
+                        <TableColumn fx:id="rollcallCol" editable="false" prefWidth="55.0" sortable="false" text="點名" />
+                        <TableColumn fx:id="reviseCol" editable="false" prefWidth="50.0" sortable="false" text="修改" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Button fx:id="back" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#backButtonAction" styleClass="btn-basic-gray" text="首頁" />
+         </children>
+      </AnchorPane>
+  </content>
+</ScrollPane>

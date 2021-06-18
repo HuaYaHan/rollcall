@@ -1,0 +1,43 @@
+/*大理石背景圖*/
+.bodybackground{
+    -fx-background-image: url("/rollcall/pictures/back.jpg");
+}
+
+/*座位表的按鈕*/
+.setButtonImage{
+    -fx-background-image: url("/rollcall/pictures/seat.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+/*字體顏色-紅*/
+.redMark{
+    -fx-text-fill: red; 
+}
+
+/*介面操作按鈕*/
+.btn-basic {
+  -fx-background-color: WhiteSmoke;
+  -fx-text-fill: black;
+  -fx-background-radius: 2px;
+  -fx-pref-height: 28px;
+  -fx-border-color: gray;
+}
+
+.btn-basic:hover {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: white;
+}
+
+/*介面操作按鈕*/
+.btn-basic-gray {
+  -fx-background-color: gainsboro;
+  -fx-text-fill: black;
+  -fx-background-radius: 2px;
+  -fx-pref-height: 28px;
+  -fx-border-color: gray;
+}
+
+.btn-basic-gray:hover {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: white;
+}

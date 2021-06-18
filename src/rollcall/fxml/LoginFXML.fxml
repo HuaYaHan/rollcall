@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rollcall.LoginFXMLController">
+  <content>
+    <AnchorPane prefHeight="500.0" prefWidth="700.0" styleClass="bodybackground" stylesheets="@style.css">
+         <children>
+            <ImageView fitHeight="366.0" fitWidth="528.0" layoutX="78.0" layoutY="63.0" opacity="0.8" pickOnBounds="true">
+               <image>
+                  <Image url="@../pictures/gray.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="login" layoutX="301.0" layoutY="344.0" onAction="#loginButtonAction" prefHeight="25.0" prefWidth="67.0" styleClass="btn-basic" text="登入" AnchorPane.leftAnchor="301.0" AnchorPane.rightAnchor="332.0" AnchorPane.topAnchor="344.0" />
+            <Label layoutX="171.0" layoutY="197.0" text="帳號:" textFill="WHITE" AnchorPane.leftAnchor="171.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <Label layoutX="171.0" layoutY="259.0" text="密碼:" textFill="WHITE" AnchorPane.leftAnchor="171.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="account" layoutX="227.0" layoutY="193.0" prefHeight="36.0" prefWidth="253.0" AnchorPane.leftAnchor="227.0" />
+            <PasswordField fx:id="password" layoutX="228.0" layoutY="259.0" prefHeight="36.0" prefWidth="251.0" AnchorPane.leftAnchor="228.0" />
+            <Label fx:id="errorHint" layoutX="285.0" layoutY="311.0" text="帳號或密碼錯誤！" textFill="RED" visible="false">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="171.0" layoutY="111.0" prefHeight="54.0" prefWidth="187.0" text="L o g i n" textFill="WHITE" AnchorPane.bottomAnchor="345.0" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="342.0" AnchorPane.topAnchor="111.0">
+               <font>
+                  <Font name="Stencil" size="44.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>
